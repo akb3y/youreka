@@ -14,14 +14,15 @@ akb3y.github.io
 
 
 ## Installation
-Developers can incorporate Youreka's features through our package that is available as a Node.js module in the [npm registry](http://www.npmjs.com/package/youreka)
+Developers can incorporate Youreka's features through our package that is available as a Node.js module in the [npm registry](http://www.npmjs.com/package/youreka).
+
 Before installing, download and install the latest Node.js,
 
 ```
 $ npm i youreka
 ```
 
-View the website at: http://localhost:3000
+View the website at: http://localhost:8080
 
 ## Example Usage
 
