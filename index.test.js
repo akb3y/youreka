@@ -1,5 +1,5 @@
-const { calculateSphereVolume } = require("./index.js");
-const errors = require("./errors.js");
+import calculateSphereVolume from "./index.js";
+import errors from "./errors.js";
 
 test("should calculate correct sphere volume of a positive radius", () => {
     expect(calculateSphereVolume(3)).toBeCloseTo(113.09733552923254);

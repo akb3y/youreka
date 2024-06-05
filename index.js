@@ -1,5 +1,6 @@
-const errors = require("./errors.js");
-const calculateSphereVolume = (radius) => {
+import * as errors from './errors.js';
+
+export const calculateSphereVolume = (radius) => {
     const isInvalidType = typeof radius !== "number" || radius === null || radius === undefined;
 
     if(isInvalidType) {
@@ -11,4 +12,4 @@ const calculateSphereVolume = (radius) => {
     return (4 / 3) * Math.PI * Math.pow(radius, 3);
 };
 
-module.exports = { calculateSphereVolume };
+
