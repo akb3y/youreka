@@ -5,20 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youreka!</title>
 
+  <link href="https://fonts.cdnfonts.com/css/rabbid-highway-sign-ii" rel="stylesheet">
   <script src="index.js" type="module" defer></script>
 </head>
-<body>
-  <h1>Sphere Volume Calculator</h1>
-  <form id="sphere-form">
-    <label for="radius">Radius:</label>
-    <input type="number" min="1" id="radius" name="radius" required>
-    <button type="submit">Calculate</button>
-  </form>
-  <div id="result"></div>
+<body style="background-color: #DFEEFB; font-family: 'Rabbid Highway Sign II', sans-serif; color:#2F6B91">
+  <div id="logo" style="position:sticky;top:0;width:100%;display:flex;justify-content:center;z-index:1000;">
+    <img src="logo-full-blue.png" style="max-width:300px;margin:10px 0" />
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <div style="position: relative; display: inline-block;">
+      <select style="
+        background-color: #2F6B91;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding-right: 30px; /* Add padding to make room for the arrow */
+        ">
+        <option>Sphere Calculator</option>
+      </select>
+      <div style="
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid white;
+        "></div>
+    </div>
+  </div>
+  <br />
+  <div style="background-color: white; border: dotted 2px #2F6B91; padding-bottom:25px; padding-left:50px;">
+    <h2 style="font-family: 'Rabbid Highway Sign II', sans-serif; color:#2F6B91">Sphere Volume Calculator</h2>
+    <form id="sphere-form">
+      <input style="padding:10px 5px;" type="number" min="1" id="radius" name="radius" placeholder="Type in a radius..." required>
+      <button type ="submit" style="background-color: #2F6B91; color: white; border: none; border-radius: 12px; padding: 10px 20px; font-size: 16px; cursor: pointer;">
+          Calculate
+      </button>
+    </form>
+    <div id="result"></div>
+  </div>
 
-  <!-- Include the index.js script -->
   <script type="module">
     import { calculateSphereVolume } from './index.js';
+    
     document.getElementById('sphere-form').addEventListener('submit', function(event) {
       event.preventDefault();
 
@@ -26,6 +64,7 @@
       const volume = calculateSphereVolume(radius);
       
       document.getElementById('result').innerText = `The volume of the sphere is: ${volume}`;
+      document.getElementById('radius').value = '';
     });
   </script>
 </body>
