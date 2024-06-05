@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/akb3y/youreka/issues"
   },
-  "homepage": "https://github.com/akb3y/youreka#readme"
+  "homepage": "https://github.com/akb3y/youreka#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
