@@ -44,4 +44,4 @@ npm test
 ```
 
 ## License
-[![Badge MIT]][MIT]
+[MIT](LICENSE)
