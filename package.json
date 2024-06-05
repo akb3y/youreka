@@ -1,0 +1,25 @@
+{
+  "name": "youreka",
+  "version": "1.0.0",
+  "description": "Equation systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/akb3y/youreka.git"
+  },
+  "keywords": [
+    "science",
+    "equation",
+    "equation",
+    "system"
+  ],
+  "author": "Alisha Barraw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akb3y/youreka/issues"
+  },
+  "homepage": "https://github.com/akb3y/youreka#readme"
+}
