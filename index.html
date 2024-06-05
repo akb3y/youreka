@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youreka!</title>
+
+  <script src="index.js" type="module" defer></script>
+</head>
+<body>
+  <h1>Sphere Volume Calculator</h1>
+  <form id="sphere-form">
+    <label for="radius">Radius:</label>
+    <input type="number" min="1" id="radius" name="radius" required>
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="result"></div>
+
+  <!-- Include the index.js script -->
+  <script type="module">
+    import { calculateSphereVolume } from './index.js';
+    document.getElementById('sphere-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const radius = parseFloat(document.getElementById('radius').value);
+      const volume = calculateSphereVolume(radius);
+      
+      document.getElementById('result').innerText = `The volume of the sphere is: ${volume}`;
+    });
+  </script>
+</body>
+</html>
