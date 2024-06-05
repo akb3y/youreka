@@ -1,4 +1,7 @@
 # youreka
+
+![youreka log](logo-full-white.png)
+
 Equation systems designed for You!
 
 ## In-browser
@@ -6,7 +9,7 @@ Equation systems designed for You!
 To interact with Youreka through the web, navigate to:
 
 ```
-DEPLOYED WEBSITE
+akb3y.github.io
 ```
 
 
@@ -23,7 +26,13 @@ View the website at: http://localhost:3000
 ## Example Usage
 
 ```
-$ youreka.calculateSphereVolume(1)
+# using require
+const { calculateSphereVolume } = require('youreka');
+
+# using import
+import { calculateSphereVolume } = from 'youreka';
+
+calculateSphereVolume(1);
 ```
 Returns
 
