@@ -24,5 +24,6 @@
   "homepage": "https://github.com/akb3y/youreka#readme",
   "dependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "type": "module"
 }
